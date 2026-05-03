@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(68, 5, 70);
+    color: white;
+    margin: 2rem;
+}
+.container{
+    position: relative;
+    max-width: 100%;
+}
+.form-logo{
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    width: 20%;
+    transform: translateX(-50%);
+    flex-shrink: 0;
+    object-fit: cover;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(235, 227, 227);
+    padding: 3.5rem 1.4rem;
+    border-radius: 10px;
+    color: rgb(11, 11, 11);
+    width: 100%;
+}
+.input-grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+}
+.input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.message-error{
+    margin-top: 1rem;
+}
+.error-message{
+    margin-top: 0.5rem;
+     color: red;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.result{
+    margin-top: 0.5rem;
+    color: seagreen;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+label {
+    width: 120px;
+    text-align: left; 
+}
+input, textarea{
+    padding: 0.5rem;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(44, 44, 44);
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+}
+button{
+    padding: 0.5rem 1.6rem;
+    border: none;
+    background-color: rgb(68, 5, 70);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-grp span i{
+    color: seagreen;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 0.6rem;
+    right: -0.1rem;
+}

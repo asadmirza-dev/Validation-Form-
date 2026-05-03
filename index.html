@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form Validation</title>
+</head>
+<body>
+     <div class="container">
+        <img src="form_submit_logo.svg" alt="" class="form-logo">
+        <div class="form-card">
+            <form method="POST" id="form">
+
+    <input type="hidden" name="access_key" value="d77924a9-ce66-4d95-a3fd-f72f194f8d9e">
+                <div class="input-grp">
+                    <label for="name">Name</label>
+                    <div class="input-field">
+                    <input type="text" id="contact-name" name="name" placeholder="Enter your Full Name" onkeyup="validateName()">
+                    <span class="error-message" id="name-error"></span>
+                    </div>
+                </div>
+                <div class="input-grp">
+                    <label for="phone">Phone</label>
+                    <div class="input-field">
+                    <input type="text" id="phone" name="phone" placeholder="Enter your Phone No." onkeyup="validatePhone()">
+                    <span class="error-message" id="phone-error"></span>
+                    </div>
+                </div>
+                <div class="input-grp">
+                    <label for="email">Email</label>
+                    <div class="input-field">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" onkeyup="validateEmail()">
+                    <span class="error-message" id="email-error"></span>
+                    </div>
+                </div>
+                
+                <div class="input-grp">
+                    <label for="message">Message</label>
+                    <div class="input-field">
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message" onkeyup="return validateMessage()"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                    </div>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+                <span class="error-message result" id="submit-error"></span>
+                <p class="result" id="result"></p>
+            </form>
+            
+        </div>
+     </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
